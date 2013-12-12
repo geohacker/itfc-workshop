@@ -2,7 +2,6 @@
 
 1. Geodata basics and management
   0. [What Maps are Made of?](https://github.com/veltman/learninglunches/tree/master/maps#what-maps-are-made-of)
-  
   1. [Formats](http://geohackers.in/2013/11/spatial-data-formats-101/) - 
     1. CSV
     2. JSON
@@ -11,7 +10,6 @@
     5. KML
     6. OSM XML
     7. TopoJSON
-  
   2. [Sources](http://datahub.io/group/geodata)
     1. OpenStreetMap
         1. [Country wide](http://download.geofabrik.de/openstreetmap/)
@@ -20,7 +18,6 @@
     3. [GeoNames](http://geonames.org) (Daily data dump and a web service)
     4. [Landsat](http://landsat.gsfc.nasa.gov/) (Landsat data have been used to monitor water quality, glacier recession, sea ice movement, invasive species encroachment, coral reef health, land use change, deforestation rates and population growth.)
     5. [Administrative Areas: GADM](http://www.gadm.org/)
-
   3. Conversion
     1. [GDAL/OGR](https://github.com/mikelmaron/Cartonama/blob/master/cartonama.md#data-swiss-army-knives)
   
@@ -28,10 +25,13 @@
   1. Extraction
     1. [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
     2. [Overpass Turbo](http://overpass-turbo.eu/)
-    3. [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis)
+    3. [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis), [extraction](https://github.com/mikelmaron/Cartonama/blob/master/cartonama.md#extract-specific-key-value-pairs)
   
-4. Online visualization library - D3.js, Leaflet.js, TileMill - examples, quick 
-overview and reading list.
+4. Visualisation - overview and examples.
+  1. [Leaflet.js](http://leafletjs.com/examples.html)
+  2. [D3.js](http://alignedleft.com/tutorials/d3)
+  3. [TileMill](http://dataforradicals.com/the-insanely-illustrated-guide-to-your-first-tile-mill-map/)
+  4. [QGIS](http://geohackers.in/2013/05/adding-the-spatial-element-to-your-data/#more-73)
 
-5. General UI/UX guidelines - organisation of data, targets, colours, structures.
+5. [General UI/UX guidelines](https://www.gov.uk/design-principles)
 
