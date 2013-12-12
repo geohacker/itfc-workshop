@@ -1,6 +1,7 @@
 # IT for Change Workshop Outline
 
-1. Basic data management - data formats, sources.
+1. Geodata basics and management
+  0. [What Maps are Made of?](https://github.com/veltman/learninglunches/tree/master/maps#what-maps-are-made-of)
   1. [Formats](http://geohackers.in/2013/11/spatial-data-formats-101/) - 
     1. CSV
     2. JSON
