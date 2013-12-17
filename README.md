@@ -34,10 +34,14 @@
     3. [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis), [extraction](https://github.com/mikelmaron/Cartonama/blob/master/cartonama.md#extract-specific-key-value-pairs)
   
 4. Visualisation - overview and examples.
+  0. [QGIS](http://geohackers.in/2013/05/adding-the-spatial-element-to-your-data/#more-73)
+    * Exercise - make a heatmap.
   1. [Leaflet.js](http://leafletjs.com/examples.html)
   2. [D3.js](http://alignedleft.com/tutorials/d3)
+    * Exercise - make a map from GeoJSON.
+    * Exercise - add data and make it a choropleth.
+    * Learn interaction.
   3. [TileMill](http://dataforradicals.com/the-insanely-illustrated-guide-to-your-first-tile-mill-map/)
-  4. [QGIS](http://geohackers.in/2013/05/adding-the-spatial-element-to-your-data/#more-73)
+    * Exercise - 
 
 5. [General UI/UX guidelines](https://www.gov.uk/design-principles)
-
