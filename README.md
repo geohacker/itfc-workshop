@@ -26,6 +26,7 @@
     4. [Landsat](http://landsat.gsfc.nasa.gov/) (Landsat data have been used to monitor water quality, glacier recession, sea ice movement, invasive species encroachment, coral reef health, land use change, deforestation rates and population growth.)
     5. [Administrative Areas: GADM](http://www.gadm.org/)
       * Exercise - overlay GADM over OSM data in QGIS.
+  3. [Spatial Queries](https://github.com/mikelmaron/Cartonama/blob/master/cartonama.md#spatial-predicates)
   3. Conversion
     1. [GDAL/OGR](https://github.com/mikelmaron/Cartonama/blob/master/cartonama.md#data-swiss-army-knives)
       * Exercise - Convert GADM data to GeoJSON using QGIS and CLI.
