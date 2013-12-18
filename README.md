@@ -36,6 +36,7 @@
   
 4. Visualisation - overview and examples.
   0. [QGIS](http://geohackers.in/2013/05/adding-the-spatial-element-to-your-data/#more-73)
+    * Exercise - taluk boundary, csv, extract, map.
     * Exercise - make a heatmap.
   1. [Leaflet.js](http://leafletjs.com/examples.html)
   2. [D3.js](http://alignedleft.com/tutorials/d3)
