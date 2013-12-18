@@ -20,6 +20,7 @@
         1. [Country wide](http://download.geofabrik.de/openstreetmap/)
         2. [Metros](http://metro.teczno.com/)
           * Exercise - load Bangalore data into QGIS.
+          * Exercise - and query for specific tags.
     2. [Natural Earth](http://www.naturalearthdata.com/downloads/) 
     3. [GeoNames](http://geonames.org) (Daily data dump and a web service)
     4. [Landsat](http://landsat.gsfc.nasa.gov/) (Landsat data have been used to monitor water quality, glacier recession, sea ice movement, invasive species encroachment, coral reef health, land use change, deforestation rates and population growth.)
