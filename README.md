@@ -14,6 +14,7 @@
     6. OSM XML
       * Tags
     7. TopoJSON
+    8. SVG
   2. [Sources](http://datahub.io/group/geodata)
     1. OpenStreetMap
         1. [Country wide](http://download.geofabrik.de/openstreetmap/)
