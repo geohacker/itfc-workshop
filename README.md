@@ -45,6 +45,7 @@
     * Exercise - make a heatmap.
   1. [Leaflet.js](http://leafletjs.com/examples.html)
   2. [D3.js](http://alignedleft.com/tutorials/d3)
+    * Convert to TopoJSON
     * Exercise - read CSV.
     * Exercise - make a map from GeoJSON.
     * Exercise - add data and make it a choropleth.
