@@ -27,6 +27,8 @@
   3. Conversion
     1. [GDAL/OGR](https://github.com/mikelmaron/Cartonama/blob/master/cartonama.md#data-swiss-army-knives)
       * Exercise - Convert GADM data to GeoJSON using QGIS and CLI.
+    2. [OGRE](http://ogre.adc4gis.com/)
+    3. [Kml2Gpx](http://kml2gpx.com/)
   
 2. OpenStreetMap
   1. Extraction
