@@ -46,6 +46,10 @@
     * Exercise - taluk boundary, csv, extract, map.
     * Exercise - make a heatmap.
   1. [Leaflet.js](http://leafletjs.com/examples.html)
+    * Exercise - [basic map setup](http://leafletjs.com/examples/quick-start.html)
+    * Exercise - [layers](http://leafletjs.com/examples/layers-control.html)
+    * Exercise - [GeoJSON](http://leafletjs.com/examples/geojson.html)
+    * Exercise - Interaction
   2. [D3.js](http://alignedleft.com/tutorials/d3)
     * Convert to TopoJSON
     * Exercise - read CSV.
@@ -53,6 +57,7 @@
     * Exercise - add data and make it a choropleth.
     * Learn interaction.
   3. [TileMill](http://dataforradicals.com/the-insanely-illustrated-guide-to-your-first-tile-mill-map/)
-    * Exercise - 
+    * Exercise - make a choropleth
+    * Exercise - Interaction
 
 5. [General UI/UX guidelines](https://www.gov.uk/design-principles)
