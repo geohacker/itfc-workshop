@@ -38,7 +38,9 @@
     1. [Overpass API](http://wiki.openstreetmap.org/wiki/Overpass_API)
     2. [Overpass Turbo](http://overpass-turbo.eu/)
     3. [Osmosis](https://wiki.openstreetmap.org/wiki/Osmosis), [extraction](https://github.com/mikelmaron/Cartonama/blob/master/cartonama.md#extract-specific-key-value-pairs)
-  
+
+2. [Pandas](https://github.com/geohacker/itfc-workshop/edit/master/README.md) - overview
+
 4. Visualisation - overview and examples.
   0. [QGIS](http://geohackers.in/2013/05/adding-the-spatial-element-to-your-data/#more-73)
     * Exercise - taluk boundary, csv, extract, map.
