@@ -66,3 +66,4 @@
 
 6. Reading List
   1. [MDN on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+  2. [Git for Grownups](http://24ways.org/2013/git-for-grownups/)
