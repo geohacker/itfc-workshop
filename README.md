@@ -1,4 +1,6 @@
-# IT for Change Workshop Outline
+# Data and Maps workshop
+#### [IT for Change](http://itforchange.net), December 18-20 2013, Bangalore.
+---
 
 1. Geodata basics and management
   0. [What Maps are Made of?](https://github.com/veltman/learninglunches/tree/master/maps#what-maps-are-made-of)
