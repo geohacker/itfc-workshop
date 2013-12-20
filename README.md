@@ -49,6 +49,7 @@
     * Exercise - [basic map setup](http://leafletjs.com/examples/quick-start.html)
     * Exercise - [layers](http://leafletjs.com/examples/layers-control.html)
     * Exercise - [GeoJSON](http://leafletjs.com/examples/geojson.html)
+    * Exercise - [Clustering](https://github.com/Leaflet/Leaflet.markercluster)
     * Exercise - Interaction
   2. [D3.js](http://alignedleft.com/tutorials/d3)
     * Convert to TopoJSON
