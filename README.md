@@ -54,10 +54,9 @@
     * Exercise - [Clustering](https://github.com/Leaflet/Leaflet.markercluster)
     * Exercise - [Zoom Levels and layers](https://github.com/klpdotorg/klpwww/blob/master/js/maps.js#L227-L255)
   2. [D3.js](http://alignedleft.com/tutorials/d3)
-    * Convert to TopoJSON
-    * Exercise - read CSV.
-    * Exercise - make a map from GeoJSON.
-    * Exercise - add data and make it a choropleth.
+    * TopoJSON - [installation](https://github.com/mbostock/topojson/wiki/Installation), [usage](https://github.com/mbostock/topojson/wiki/Command-Line-Reference#usage)
+    * Exercise - make a map from GeoJSON. Also, [see Mike's guide](http://bost.ocks.org/mike/map/)
+    * Exercise - add data and make it a [choropleth](http://bl.ocks.org/mbostock/4060606).
     * Learn interaction.
   3. [TileMill](http://dataforradicals.com/the-insanely-illustrated-guide-to-your-first-tile-mill-map/)
     * Exercise - make a choropleth
