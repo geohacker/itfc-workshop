@@ -61,3 +61,6 @@
     * Exercise - Interaction
 
 5. [General UI/UX guidelines](https://www.gov.uk/design-principles)
+
+6. Reading List
+  1. [MDN on JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
