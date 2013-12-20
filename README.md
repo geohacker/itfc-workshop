@@ -52,7 +52,7 @@
     * Exercise - [layers](http://leafletjs.com/examples/layers-control.html)
     * Exercise - [GeoJSON](http://leafletjs.com/examples/geojson.html)
     * Exercise - [Clustering](https://github.com/Leaflet/Leaflet.markercluster)
-    * Exercise - Interaction
+    * Exercise - [Zoom Levels and layers](https://github.com/klpdotorg/klpwww/blob/master/js/maps.js#L227-L255)
   2. [D3.js](http://alignedleft.com/tutorials/d3)
     * Convert to TopoJSON
     * Exercise - read CSV.
