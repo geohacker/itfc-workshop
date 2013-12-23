@@ -1,0 +1,103 @@
+<html>
+<head>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <style type="text/css">
+    .bar {
+      display: inline-block;
+      background-color: teal;
+      width: 20px;
+      /*height: 10px;*/
+      margin-right: 10px;
+      color: white;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    svg {
+      width: 100%;
+      height: 500px;
+    }
+
+    path {
+      fill: teal;
+      stroke: #000;
+      stroke-width: 1px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id='map'></div>
+
+</body>
+<script type="text/javascript">
+  
+  var dataset = [ 25, 7, 5, 26, 11, 8, 25, 14, 23, 19,
+                14, 11, 22, 29, 11, 13, 12, 17, 18, 10,
+                24, 18, 25, 9, 3 ];
+  // d3.select('body')
+  //  .selectAll('p')
+  //  .data(dataset)
+  //  .enter()
+  //  .append('p')
+  //  .text(function(d){return 'Hello '+d})
+  //  .style('color', function(d) {
+  //    if(d < 5) {
+  //      return 'red';
+  //    }
+
+  //    else {
+  //      return 'blue';
+  //    }
+  //  });
+
+//     d3.select('body')
+//       .selectAll('div')
+//       .data(dataset)
+//       .enter()
+//       .append('div')
+//       .attr('class', 'bar')
+//       .style('height', function(d){
+//         return 2*d+'px';
+//       })
+//       .text(function(d) {
+//         return d;
+//       })
+//       .on('mouseover', changeColor)
+//       .on('mouseout', resetColor);
+
+function changeColor() {
+  d3.select(this)
+    .style('opacity', '0.5');
+}
+
+// function resetColor() {
+//   d3.select(this)
+//     .style('opacity', '1');
+// }
+
+width = 500;
+height = 500;
+
+var xy = d3.geo.mercator()
+  .center([77.28679,16.74375])
+  .scale(10000)
+  .translate([width/2, height/2]);
+
+var path = d3.geo.path().projection(xy);
+
+var svg = d3.select("#map")
+  .append("svg");
+
+d3.json("yadgir.json", function(json) {
+  svg.selectAll("path")
+  .data(json.features)
+  .enter().append("path")
+  .attr("d", path)
+  .on('mouseover', changeColor)
+});
+
+</script>
+
+</html>

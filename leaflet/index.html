@@ -1,0 +1,94 @@
+<html>
+<title>Leaflet Exercises!</title>
+<head>
+	  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css" />
+	  <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+	  <script src='schools.js'></script>
+	  <script src='healthcenters.js'></script>
+	  <script src="http://leaflet.github.io/Leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+	  <link rel="stylesheet" type="text/css" href="http://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.css">
+	  <link rel="stylesheet" type="text/css" href="http://leaflet.github.io/Leaflet.markercluster/dist/MarkerCluster.Default.css">
+	  <style type="text/css">
+
+	  	#map { 
+	  		height: 100%;
+	  		width: 100%; 
+	  		}
+
+	  </style>
+
+</head>
+
+<body>
+	<div id="map"></div>
+	<script type="text/javascript">
+		var yadgir  = L.latLng(16.7675, 77.1366);
+
+
+		var stamenUrl = 'http://tile.stamen.com/{mapType}/{z}/{x}/{y}.jpg';
+		var attribution = 'OSM | Stamen';
+
+		var watercolour = L.tileLayer(stamenUrl, {mapType:'watercolor', attribution:attribution});
+
+		var toner = L.tileLayer(stamenUrl, {mapType:'toner', attribution:attribution});
+
+
+
+		// var marker = L.marker(yadgir).addTo(map);
+		// marker.bindPopup("<b>Hello world!</b>");
+		var schoolIcon = L.icon({
+			iconUrl: 'school.png',
+			iconSize: [20, 20],
+			iconAnchor: [10, 10],
+			popupAnchor: [0, -9]
+		});
+
+		var healthIcon = L.icon({
+			iconUrl: 'health.png',
+			iconSize: [20, 20],
+			iconAnchor: [10, 10],
+			popupAnchor: [0, -9]
+		});
+
+		var schoolCluster = new L.MarkerClusterGroup();
+
+		var schoolLayer = L.geoJson(schools, {
+			pointToLayer: function(feature, latlng){ return L.marker(latlng, {icon:schoolIcon});},
+			onEachFeature: createPopup
+		});
+
+		schoolLayer.addTo(schoolCluster);
+
+		var healthLayer = L.geoJson(healthcenters, {
+			pointToLayer: function(feature, latlng){ return L.marker(latlng, {icon:healthIcon});},
+			onEachFeature: createPopup
+		});
+
+		function createPopup (feature, layer) {
+			layer.bindPopup(feature.properties['name']).openPopup();
+		};
+
+		var map = L.map('map', {
+			layers: [watercolour, toner]
+		}
+
+			).setView(yadgir, 11);
+
+		// schoolLayer.addTo(map);
+		
+		var baseMaps = {
+			'Watercolor': watercolour,
+			'Toner': toner
+		};
+
+		var overlays = {
+			'Schools': schoolCluster,
+			'Health Centers': healthLayer
+		};
+
+		L.control.layers(baseMaps, overlays).addTo(map);
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+Vidhan Soudha
+<osm-script>
+  <query type="node">
+    <has-kv k="name" v="Vidhana Soudha"/>
+    <bbox-query {{bbox}} />
+  </query>
+  <print/>
+</osm-script>
+
+Bangalore One near Vidhan Soudha
+<osm-script>
+  <query type="node">
+    <has-kv k="name" v="Vidhana Soudha"/>
+  </query>
+      <query type="node">
+     	<around radius="1000"/>
+      	<has-kv k="name" v="Bangalore One"/>
+  	  </query>
+  <print/>
+</osm-script>
+
+Regex Soudha
+<osm-script output='json'>
+  <query type="node">
+    <has-kv k="name" regv="Soudha"/>
+    <bbox-query {{bbox}} />
+  </query>
+  <print/>
+</osm-script>
+
+All bustops near Vidhan Soudha
+<osm-script output='json'>
+  <query type="node">
+    <has-kv k="name" v="Vidhana Soudha"/>
+  </query>
+      <query type="node">
+     	<around radius="1000"/>
+      	<has-kv k="highway" v="bus_stop"/>
+  	  </query>
+  <print/>
+</osm-script>
+
+All data
+<osm-script>
+  <union into="_">
+    <bbox-query e="7.157" n="50.748" s="50.746" w="7.154"/>
+    <recurse type="up"/>
+  </union>
+  <print mode="meta"/>
+</osm-script>
+
+Find NH7
+<query type="relation">
+  <has-kv k="ref" v="NH7"/>
+  <bbox-query {{bbox}} />
+</query>
+<recurse type="relation-way"/>
+<recurse type="way-node"/>
+<print/>
+
+<query type="relation">
+  <has-kv k="ref" v="NH7"/>
+  <bbox-query {{bbox}} />
+</query>
+<recurse type="relation-way"/>
+<union>
+  <item/>
+  <recurse type="down"/>
+</union>
+<print/>
+
